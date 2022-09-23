@@ -1,0 +1,29 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .product-modal {
+        .modal-title {
+            border: none;
+            text-align: center;
+        }
+
+        .modal-inner-wrap {
+            width: fit-content;
+            min-width: 300px;
+
+            .modal-product-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .modal-close {
+                &.action.primary {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
