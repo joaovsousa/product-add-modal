@@ -38,10 +38,13 @@ define(
             cart.subscribe(function () {
                 changeProduct(config)
             })
-            function changeProduct(product) {
-                productAdded().item(product.product_sku)
+            function changeProduct(product_sku) {
+                productAdded().item(product_sku)
             }
-            modal(options, modalId)
-            modalId.modal("openModal")
+
+            if(config) {
+                modal(options, modalId)
+                modalId.modal("openModal")
+            }
         }
     })
